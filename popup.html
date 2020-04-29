@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+  <head>
+    <title>GTmetrix Analyzer</title>
+    <script src="./popup.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+        .wrapper{
+            padding: 10px 0 0 0;
+            width: 170px;
+        }
+        .title{
+            font-size: 18px;
+            color: #5c5b5b;
+            margin-bottom: 8px;
+            margin-left: 8px;
+        }
+        .separator{
+            width: 100%;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        .collapse-gql-button {
+            background-color: rgba(255, 255 ,255 , 1);
+            width: 100%;
+            padding: 10px;
+            border: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .collapse-gql-button:hover{
+            background-color: rgba(245, 245 ,245 , 1);
+        }
+        .gql-image{
+            margin-right: 8px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+        <h2 class="title">Gitlab Collapser</h2>
+        <div class="separator"></div>
+        <button class="collapse-gql-button" id="collapseGql">
+            <img class="gql-image" src="./gql.png" width="14" height="14"></img>
+            Collapse .graphql
+        </button>
+    </div>
+  </body>
+</html>
